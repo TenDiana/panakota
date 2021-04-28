@@ -1,0 +1,15 @@
+.info{
+  display: flex;
+  z-index: 10;
+  .row{
+    display: grid;
+    grid-template-columns:auto 35%;
+  }
+  &__text{
+    background-color: indigo;
+  }
+  &__img{
+    background-color: aquamarine;
+  }
+
+}

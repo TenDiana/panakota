@@ -1,0 +1,51 @@
+.dep{
+  padding: 50px 0 500px 0;
+  background-color: rgba(57, 0, 0, 0.71);
+  display: none;
+  .form{
+    text-align: center;
+  }
+  .input{
+    width: 350px;
+    height: 40px;
+    border: none;
+    border-radius: 7px;
+    outline: none;
+    cursor: pointer;
+    font-size: 17px;
+    padding-left: 15px;
+  }
+  .btn, .back{
+    width: 100px;
+    height: 40px;
+    font-size: 17px;
+    outline: none;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    background-color: #520000;
+    color: white;
+  }
+  .table{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 40px;
+  }
+  .block, .block2, .block3, .block4{
+    color: white;
+    margin-right: 45px;
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+  h3{
+    color: #400000;
+    font-size: 23px;
+    margin-bottom: 10px;
+  }
+  p{
+    margin-bottom: 70px;
+    font-size: 17px;
+  }
+
+}

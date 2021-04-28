@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .dep {
+            padding: 50px 0 500px 0;
+            background-color: rgba(57, 0, 0, 0.71);
+        }
+        .form{
+            text-align: center;
+        }
+        .input{
+            width: 350px;
+            height: 40px;
+            border: none;
+            border-radius: 7px;
+            outline: none;
+            cursor: pointer;
+            font-size: 17px;
+            padding-left: 15px;
+        }
+        .btn, .back{
+            width: 100px;
+            height: 40px;
+            font-size: 17px;
+            outline: none;
+            border: none;
+            border-radius: 7px;
+            cursor: pointer;
+            background-color: #520000;
+            color: white;
+        }
+        .back{
+            margin-left: 50px;
+        }
+        .table{
+            display: grid;
+            grid-template-columns: 1fr;
+            margin-top: 40px;
+            margin-left: 50px;
+        }
+        .block, .block2, .block3, .block4{
+            color: white;
+            margin-right: 45px;
+         }
+        h3{
+            color: #400000;
+            font-size: 23px;
+            margin-bottom: 10px;
+        }
+        p{
+            margin-bottom: 70px;
+            font-size: 17px;
+        }
+    </style>
+</head>
+<body>
+<section class="dep">
+    <div class="container">
+        <form class="form">
+            <label>
+                <input type="text" placeholder="введите ФИО депутата" class="input">
+                <button class="btn" type='submit'>поиск</button>
+            </label>
+        </form>
+        <div class="table">
+            <div class="block"></div>
+            <div class="block2"></div>
+            <div class="block3"></div>
+            <div class="block4"></div>
+        </div>
+        <button class="back"><a href="index.html">Назад</a></button>
+
+    </div>
+</section>
+
+<script src="src/js/main.js"></script>
+</body>
+</html>

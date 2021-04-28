@@ -1,0 +1,36 @@
+.header {
+  background-color: #520000;
+  padding: 15px 0;
+  position: fixed;
+  z-index: 3;
+  width: 100%;
+  display: block;
+}
+.header .row {
+  justify-content: space-between;
+  align-items: center;
+}
+.header__img {
+  width: 70px;
+  height: 70px;
+}
+.header__list {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+.header__item {
+  margin-right: 150px;
+}
+.header__item:last-child {
+  margin-right: 0;
+}
+.header__link {
+  text-decoration: none;
+  color: white;
+  font-size: 21px;
+  text-transform: uppercase;
+}
+.header__link:hover {
+  text-decoration: underline;
+}

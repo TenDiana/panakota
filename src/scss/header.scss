@@ -1,0 +1,27 @@
+.header{
+  background-color: #520000;
+  padding: 20px 0 ;
+  position: fixed;
+  z-index: 3;
+  width: 100%;
+  display: block;
+  &__list{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    list-style-type: none;
+  }
+  &__item{
+    width: 20%;
+    text-align: center;
+  }
+  &__link{
+    text-decoration: none;
+    color: white;
+    font-size: 21px;
+    text-transform: uppercase;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+}

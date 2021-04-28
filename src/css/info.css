@@ -1,0 +1,10 @@
+.info .row {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+.info__text {
+  background-color: indigo;
+}
+.info__img {
+  background-color: aquamarine;
+}
