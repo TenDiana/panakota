@@ -1,15 +1,47 @@
 .info{
-  display: flex;
-  z-index: 10;
+  background-color: rgba(82, 0, 0, 0.21);
+  padding-top: 50px;
+  padding-bottom: 50px;
   .row{
     display: grid;
-    grid-template-columns:auto 35%;
+    grid-template-columns:auto 30%;
   }
   &__text{
-    background-color: indigo;
+    border: 2px solid #400000;
+    padding: 25px 20px 15px 35px;
   }
-  &__img{
-    background-color: aquamarine;
+  #carousel{
+    height: 100%;
+    padding: 7px;
+    overflow: hidden;
+  }
+  .carousel__item {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  &__item{
+    font-family: "Times New Roman", sans-serif;
+    font-size: 20px;
+    margin-bottom: 12px;
+    line-height: 20px;
+  }
+  &__title{
+    font-size: 35px;
+    font-weight: bold;
+    color: #2e0000;
+  }
+  &__item a{
+    font-size: 27px;
+    font-weight: bold;
+    color: #4b0000;
+    text-decoration: none;
+  }
+  .carousel__item{
+    display: none;
+  }
+  .active {
+    display: block;
   }
 
 }

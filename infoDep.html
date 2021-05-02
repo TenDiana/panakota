@@ -12,11 +12,33 @@
             margin: 0;
             box-sizing: border-box;
         }
+        .container{
+            max-width: 1200px;
+            width: 100%;
+            margin: 0 auto;
+        }
         .dep {
-            padding: 50px 0 500px 0;
-            background-color: rgba(57, 0, 0, 0.71);
+            min-height: 100vh;
+            overflow: hidden;
+            background: url("https://www.baibol.kg/img/attraction_gallery/152413549593403.jpg") top/cover no-repeat;
+            position: relative;
+        }
+        .dep:after{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(2, 0, 0, 0.78);
+            z-index: 0;
         }
         .form{
+            position: absolute;
+            z-index: 2;
+            top: 30px;
+            left: 50%;
+            transform: translateX(-50%);
             text-align: center;
         }
         .input{
@@ -30,6 +52,8 @@
             padding-left: 15px;
         }
         .btn, .back{
+            font-family: "Times New Roman", sans-serif;
+            letter-spacing: 1px;
             width: 100px;
             height: 40px;
             font-size: 17px;
@@ -41,32 +65,47 @@
             color: white;
         }
         .back{
-            margin-left: 50px;
+            position: absolute;
+            z-index: 2;
+            top: 15px;
+            width: 160px;
+            height: 35px;
+            font-size: 14px;
+        }
+        .back a{
+            text-decoration: none;
+            color: white;
         }
         .table{
             display: grid;
             grid-template-columns: 1fr;
-            margin-top: 40px;
-            margin-left: 50px;
+            position: absolute;
+            z-index: 2;
+            top: 20%;
+            /*margin-left: 50px;*/
         }
         .block, .block2, .block3, .block4{
-            color: white;
-            margin-right: 45px;
+            color: black;
+            background-color: #fff;
+            margin-bottom: 15px;
+            border-radius: 7px;
          }
         h3{
-            color: #400000;
-            font-size: 23px;
-            margin-bottom: 10px;
+            color: #1c0000;
+            font-size: 20px;
+            padding: 15px 0 0 15px;
         }
         p{
-            margin-bottom: 70px;
+            margin-bottom: 15px;
             font-size: 17px;
+            padding: 15px 0 0 15px;
         }
     </style>
 </head>
 <body>
 <section class="dep">
     <div class="container">
+        <button class="back"><a href="index.html">Назад на Главную</a></button>
         <form class="form">
             <label>
                 <input type="text" placeholder="введите ФИО депутата" class="input">
@@ -79,11 +118,10 @@
             <div class="block3"></div>
             <div class="block4"></div>
         </div>
-        <button class="back"><a href="index.html">Назад</a></button>
-
     </div>
 </section>
 
-<script src="src/js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+<script src="src/js/dep.js"></script>
 </body>
 </html>

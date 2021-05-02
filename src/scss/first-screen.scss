@@ -1,6 +1,6 @@
 .first-screen{
   background: url("../images/флаг.jpg") top/cover no-repeat;
-  padding: 250px 0;
+  padding: 220px 0 ;
   position: relative;
   &:after{
     content: '';
@@ -17,10 +17,11 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 90px;
+    font-size: 100px;
     color: white;
     display: flex;
     z-index: 2;
     letter-spacing: 3px;
+    //text-transform: uppercase;
   }
 }

@@ -15,7 +15,7 @@
             <ul class="header__list">
                 <li class="header__item"><a href="infoDep.html" class="header__link">Статистика</a></li>
                 <li class="header__item"><a href="#" class="header__link">Lorem</a></li>
-                <li class="header__item"><a href="#" class="header__link">Lorem</a></li>
+                <li class="header__item"><a href="#" class="header__link">Новости</a></li>
                 <li class="header__item"><a href="#" class="header__link">Образование</a></li>
                 <li class="header__item"><a href="#" class="header__link">Lorem</a></li>
             </ul>
@@ -25,24 +25,51 @@
 <main class="main">
     <section class="first-screen">
         <div class="container">
-            <h1 class="first-screen__title">PannaCotta</h1>
+            <h1 class="first-screen__title">Panakota</h1>
         </div>
     </section>
     <section class="info">
         <div class="container">
             <div class="row">
-                <div class="info__text">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore magnam minus quibusdam quo. Amet dicta dolor dolore, ducimus ea eius expedita facilis illo ipsa iste minima molestiae neque nesciunt, non porro quaerat quasi, quo rerum sint suscipit. Commodi repellat repudiandae veniam. Aliquam amet aperiam consectetur culpa cum cumque dignissimos distinctio ducimus enim eveniet facere fugiat laborum magni, molestiae neque nostrum nulla obcaecati officiis omnis perspiciatis quo, quos repellat sit, ut velit. Aliquid at aut consectetur cum deserunt dignissimos distinctio dolore dolorem eos error esse et expedita illo in, ipsa itaque laudantium minima molestias nihil obcaecati, odio, odit optio possimus qui quidem rerum sapiente sint totam unde vel voluptatem voluptates voluptatibus voluptatum! Alias culpa cum cupiditate debitis dicta dignissimos dolor dolore eaque earum eligendi enim error esse excepturi facere fugit illo illum in, ipsa libero magni maiores minima modi mollitia neque numquam officiis placeat quidem quos repellendus sed, similique temporibus totam, ut veniam veritatis vitae voluptate! Corporis necessitatibus officia quidem ratione temporibus. A aliquam assumenda aut beatae eligendi eos fugit iure labore nihil nulla quidem quod reiciendis repellendus reprehenderit, sint, sit tempore, temporibus. Amet sapiente sequi soluta voluptate voluptatibus! Alias amet aspernatur culpa deleniti distinctio error fugit nostrum temporibus velit voluptatibus.
-                </div>
+                <ul class="info__text">
+                    <p class="info__item"><span class="info__title">Panakota</span> - это платформа для осознанных избирателей.
+                    Она создана с целью повысить вовлеченность граждан в Политическую жизнь.</p>
+                    <li class="info__item">В разделе <a href="#">Статистика</a>, введя имя интересующего вас депутата, вы получите список законопроектов, за которые он голосовал (за, против, отсутствовал, инициировал).</li>
+                    <li class="info__item">В разделе <a href="#">Новости</a>, мы предоставляем вам самые свежие новости касаемо деятельности депутатов Жогорку Кенеша.</li>
+                    <li class="info__item">В разделе <a href="#">Образование</a>, вы получите фундаментальные знания Политической грамотности, найдете интересные ресурсы по этой теме, а под рукой всегда будет Юридический словарь</li>
+                </ul>
                 <div class="info__img">
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam beatae consectetur corporis est excepturi fugit harum id iusto, laborum magni maxime, molestiae nobis nostrum quas qui quod reiciendis totam velit veniam veritatis. A aut autem debitis delectus distinctio, dolor dolorem dolores ea enim expedita hic illum impedit in itaque nihil numquam placeat porro quaerat quam quibusdam quidem repellat sapiente suscipit tempora temporibus tenetur voluptates. Amet aspernatur beatae ducimus eius error eveniet itaque iure minima, modi natus neque, nisi nobis perferendis praesentium quae quas quasi qui quidem quisquam quo rem reprehenderit, similique sint soluta totam ullam voluptatibus? Aspernatur ducimus exercitationem explicabo id libero quas quisquam, tempora voluptas! Animi aperiam dolor error fugiat illum incidunt, iure, maiores odio pariatur praesentium ratione reiciendis?
+                    <div id="carousel">
+                        <img src="./src/images/огонь_auto_x2.jpg" alt="" class="carousel__item active">
+                        <img src="./src/images/танец_auto_x2%20(1).jpg" alt="" class="carousel__item ">
+                        <img src="./src/images/площадь_auto_x2.jpg" alt="" class="carousel__item">
+                        <img src="./src/images/танец_auto_x2%20(1).jpg" alt="" class="carousel__item ">
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 </main>
+<footer class="footer">
+    <div class="footer__img1"><img src="./src/images/горы%20(1).svg" alt=""></div>
+    <div class="footer__img2"><img src="./src/images/горы3.svg" alt=""></div>
+    <div class="footer__img3"><img src="./src/images/горы%20(1).svg" alt=""></div>
+    <div class="blockBlack"></div>
+    <div class="container">
+        <div class="footer__mailing">
+            <h3 class="footer__title">Рассылка</h3>
+            <p class="footer__sub">Подпишитесь на нашу рассылку и будьте в курсе деятельности депутатов.</p>
+            <label class="footer__row">
+                <input type="email" placeholder="Мой e-mail" class="footer__email">
+                <button class="footer__btn">подписаться</button>
+            </label>
+        </div>
+        <p class="footer__end">Твоя Panakota</p>
+    </div>
+</footer>
 
 <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 <script src="src/js/main.js"></script>
+
 </body>
 </html>
